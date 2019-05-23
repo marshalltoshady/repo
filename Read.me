@@ -1,0 +1,42 @@
+#comp-5349-ass2-R16H-Thu-SIT457-6
+
+#This file is to explain things need to know about using comp-5349-ass2-R16H-Thu-SIT457-6.ipynb to process 
+#Amazon DVD Review data to determine summary statistics and similarity calculation of data.
+
+#Prerequisites
+#Java version “1.8.0_201” 
+#Apache-hadoop Version 2.8.5
+#spark.executor.memory : 10g 
+#maximizeResourceAllocation: True 
+#Spark.executor.cores: 8 
+#spark.executor .instances: 3
+
+#AWS EMR 
+#Master Node - m3.xlarge
+#Core Node - m3.xlarge x 3 
+#spark_tfh.sh file is attached to set up the software setting for each instance, need to be implemented while creating cluster
+#myConfig.json file is attached to set up Spark Configuration prior to start of application, need to be boot-trapped to cluster on AWS
+
+#Running the tests
+#Task is implemented to be run on AWS EMR Jupyter Notebook only unless further developed in the near future 
+#Task blocks can be run on notebook interface directly and output are printe to console.  
+#Ensure the file that needs to be processed is uploaded onto AWS S3 and read in to task by spark.read.csv()method. 
+#data input path = "$$$AWS S3 file path$$$"
+
+#Data output: 
+#All data output are not saved back to any local storage, only available on notebook console. 
+
+#Versioning
+
+V1.0
+
+#Authors 
+WEI DAI - wdai9162 - 309174902 
+RUOTAO LIN - rlin5842 - 480509930 
+LUNDI WANG - lwan0604 - 480285920
+TIANLI LIANG - tlia2881 - 450635180 
+
+#License N/A 
+
+#Acknowledgments
+@USYD @Yin Zhou
